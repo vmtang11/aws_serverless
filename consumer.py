@@ -196,7 +196,7 @@ def lambda_handler(event, context):
     LOG.info(f"Sentiment from FANG companies: {df.to_dict()}")
 
     # Write result to S3
-    write_s3(df=df, bucket="fangsentiment-cloudproject4", name=names)
+    write_s3(df=df, bucket="fangsentiment-vt", name=names)
     
     df = names_to_wikipedia(names)
     # Perform Sentiment Analysis
@@ -204,4 +204,4 @@ def lambda_handler(event, context):
     LOG.info(f"Sentiment from FANG companies: {df.to_dict()}")
 
     # Write result to S3
-    write_s3_entities(df=df, bucket="fangsentiment-cloudproject4", name=names)
+    write_s3_entities(df=df, bucket="fangsentiment-vt", name=names)
