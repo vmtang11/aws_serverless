@@ -5,4 +5,4 @@ The purpose of this project is to reproduce the architecture of the example serv
 
 ![](https://github.com/vmtang11/aws_serverless/blob/main/serverless_pipeline.png)
 
-This project is based on [this repo](https://github.com/noahgift/awslambda)
+This project is based on [this repo](https://github.com/noahgift/awslambda).
